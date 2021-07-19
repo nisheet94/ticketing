@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import request from 'supertest';
 import { app } from '../app';
 import jwt from 'jsonwebtoken';
+import { getNodeMajorVersion } from 'typescript';
 
 declare global {
   namespace NodeJS {
@@ -14,7 +15,7 @@ declare global {
 
 jest.mock('../nats-wrapper');
 
-process.env.STRIPE_KEY = 'sk_test_51JDcU7BM0Xv6laJ7XHQUcQLuDEn4ctnsD8huaOm8sBpBtBpSf95EMnzt0y3nQ48NnNh9i1yGvMed94uoQrIFMUqZ00uBhXX0wL';
+process.env.STRIPE_KEY = 'sk_test_c7MVBsHhjJ1dgOTfNQkoeabk00G1i7V3wz';
 
 let mongo: any;
 beforeAll(async () => {
