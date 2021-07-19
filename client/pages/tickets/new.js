@@ -14,7 +14,6 @@ const NewTicket = () => {
     },
     onSuccess: () => Router.push('/'),
   });
-  sdfsda();
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -34,7 +33,7 @@ const NewTicket = () => {
 
   return (
     <div>
-      <h1> Create a Ticket </h1>
+      <h1>Create a Ticket</h1>
       <form onSubmit={onSubmit}>
         <div className="form-group">
           <label>Title</label>
@@ -49,7 +48,7 @@ const NewTicket = () => {
           <input
             value={price}
             onBlur={onBlur}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => setPrice(e.target.value)}
             className="form-control"
           />
         </div>
